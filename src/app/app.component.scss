@@ -1,0 +1,26 @@
+:host {
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .container {
+    padding: 24px 16px;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
+    z-index: 2;
+    background: #e91e63;
+
+    &__nav {
+      display: flex;
+      padding: 8px 16px;
+    }
+  }
+}
+
