@@ -8,11 +8,9 @@ import { IUser, IUsersResponse } from '../../../interfaces/user.interface';
 
 @Injectable()
 export class UserResolver implements Resolve<IUser[]> {
-  constructor(private api: ApiService) {}
+  constructor(private api: ApiService) { }
 
   resolve(): Observable<IUser[]> {
-    return this.api
-      .fetchUsers()
-      .pipe(map((response: IUsersResponse) => response?.data));
+    return this.api.fetchUsers().pipe(map((response: IUsersResponse) => response?.data));
   }
 }
